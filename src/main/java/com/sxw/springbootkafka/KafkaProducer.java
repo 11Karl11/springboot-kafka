@@ -17,9 +17,9 @@ import org.springframework.util.concurrent.ListenableFutureCallback;
  * @date 2018/8/3
  */
 @Component
-public class KafkaSender<T> {
+public class KafkaProducer<T> {
 
-    private Logger logger = LoggerFactory.getLogger(KafkaSender.class);
+    private Logger logger = LoggerFactory.getLogger(KafkaProducer.class);
 
     @Autowired
     private KafkaTemplate<String, Object> kafkaTemplate;

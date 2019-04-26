@@ -20,7 +20,6 @@ public class SpringbootKafkaApplicationTests {
 	public void kafkaSend() throws InterruptedException {
 		//模拟发消息
 		for (int i = 0; i < 5; i++) {
-
 			User user = new User();
 			user.setId(System.currentTimeMillis());
 			user.setMsg(UUID.randomUUID().toString());
@@ -28,7 +27,6 @@ public class SpringbootKafkaApplicationTests {
 
 			kafkaSender.send(user);
 			Thread.sleep(3000);
-
 		}
 	}
 
